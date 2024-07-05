@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pruducts",
+  "info": {
+    "singularName": "pruduct",
+    "pluralName": "pruducts",
+    "displayName": "pruduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women"
+      ]
+    }
+  }
+}
